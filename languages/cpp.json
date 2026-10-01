@@ -1,0 +1,14 @@
+{
+  "name": "cpp",
+  "extends": "c",
+  "extensions": [".cpp", ".cc", ".cxx", ".c++", ".hpp", ".hh", ".hxx", ".cu", ".cuh"],
+  "aliases": ["c++", "cc", "cxx"],
+  "keywords": {
+    "0.3": ["this"],
+    "0.5": ["namespace", "using", "typename", "public", "private", "protected", "constexpr", "auto"],
+    "1.0": ["template", "virtual", "override", "new"],
+    "1.5": ["try", "catch", "throw"],
+    "2.0": ["class", "delete", "nullptr", "operator"]
+  },
+  "operators": ["::"]
+}

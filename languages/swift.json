@@ -1,0 +1,19 @@
+{
+  "name": "swift",
+  "extensions": [".swift"],
+  "aliases": [],
+  "line_comments": ["//"],
+  "block_comments": [["/*", "*/"]],
+  "case_sensitive": true,
+  "string_quotes": ["\""],
+  "numeric_calls": true,
+  "keywords": {
+    "0.3": ["self"],
+    "0.5": ["import", "public", "private", "internal", "fileprivate", "open", "static", "final", "override"],
+    "1.0": ["func", "let", "var", "init", "where"],
+    "1.5": ["return", "throw", "throws", "try", "catch", "defer", "break", "continue", "await", "async"],
+    "2.0": ["class", "struct", "enum", "protocol", "extension", "in", "is", "as", "nil", "true", "false", "super"],
+    "2.5": ["if", "else", "for", "while", "repeat", "switch", "case", "default", "guard"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "===", "!==", "+", "-", "*", "/", "%", "+=", "-=", "*=", "/=", "%=", "&&", "||", "!", "&", "|", "^", "<<", ">>", "->", "??", "?", "...", "..<"]
+}

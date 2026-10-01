@@ -1,0 +1,21 @@
+{
+  "name": "javascript",
+  "extensions": [".js", ".jsx", ".mjs", ".cjs"],
+  "interpreters": ["node", "nodejs", "bun"],
+  "aliases": ["js", "node", "nodejs"],
+  "line_comments": ["//"],
+  "block_comments": [["/*", "*/"]],
+  "case_sensitive": true,
+  "string_quotes": ["\"", "'", "`"],
+  "numeric_calls": true,
+  "keywords": {
+    "0.3": ["this"],
+    "0.5": ["import", "from", "export", "require", "module", "const", "static"],
+    "0.8": ["as"],
+    "1.0": ["function", "let", "var", "new", "async"],
+    "1.5": ["return", "yield", "try", "catch", "finally", "throw", "break", "continue", "await"],
+    "2.0": ["class", "extends", "in", "of", "typeof", "instanceof", "null", "undefined", "true", "false", "super", "delete", "void"],
+    "2.5": ["if", "else", "for", "while", "do", "switch", "case", "default"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "===", "!==", "+", "-", "*", "/", "%", "**", "+=", "-=", "*=", "/=", "%=", "**=", "&&", "||", "!", "??", "=>", "?", "++", "--", "&", "|", "^", "~", "<<", ">>", ">>>", "&&=", "||=", "??="]
+}

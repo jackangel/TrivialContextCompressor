@@ -1,0 +1,19 @@
+{
+  "name": "csharp",
+  "extensions": [".cs", ".csx"],
+  "aliases": ["c#", "cs"],
+  "line_comments": ["//"],
+  "block_comments": [["/*", "*/"]],
+  "case_sensitive": true,
+  "string_quotes": ["\""],
+  "numeric_calls": true,
+  "keywords": {
+    "0.3": ["this"],
+    "0.5": ["using", "namespace", "public", "private", "protected", "internal", "static", "readonly", "sealed", "partial", "abstract", "override"],
+    "1.0": ["void", "new", "var", "async", "virtual"],
+    "1.5": ["return", "try", "catch", "finally", "throw", "break", "continue", "await", "yield", "as"],
+    "2.0": ["class", "struct", "interface", "enum", "record", "is", "in", "null", "true", "false", "base", "typeof", "nameof"],
+    "2.5": ["if", "else", "for", "foreach", "while", "do", "switch", "case", "default", "when", "where"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "+", "-", "*", "/", "%", "+=", "-=", "*=", "/=", "%=", "&&", "||", "!", "&", "|", "^", "~", "<<", ">>", "=>", "??", "??=", "?.", "?", "++", "--", "::"]
+}

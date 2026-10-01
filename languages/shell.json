@@ -1,0 +1,21 @@
+{
+  "name": "shell",
+  "extensions": [".sh", ".bash", ".zsh", ".ksh"],
+  "filenames": [".bashrc", ".bash_profile", ".zshrc", ".profile"],
+  "interpreters": ["sh", "bash", "zsh", "ksh", "dash", "ash"],
+  "aliases": ["bash", "sh", "zsh"],
+  "line_comments": ["#"],
+  "block_comments": [],
+  "case_sensitive": true,
+  "string_quotes": ["\"", "'"],
+  "keywords": {
+    "0.4": ["fi", "done", "esac"],
+    "0.5": ["export", "source", "local", "readonly", "declare", "set", "then", "do"],
+    "1.0": ["function", "alias"],
+    "1.5": ["return", "exit", "break", "continue", "echo", "printf", "trap"],
+    "2.0": ["in", "true", "false", "test", "read"],
+    "2.5": ["if", "elif", "else", "for", "while", "until", "case"],
+    "3.5": ["eq", "ne", "lt", "le", "gt", "ge"]
+  },
+  "operators": ["==", "!=", "=~", "&&", "||", "|", ">", ">>", "<", "<<", "!", "2>", "2>&1", "&>"]
+}

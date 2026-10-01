@@ -1,0 +1,22 @@
+{
+  "name": "ruby",
+  "extensions": [".rb", ".rake", ".gemspec"],
+  "filenames": ["rakefile", "gemfile"],
+  "interpreters": ["ruby"],
+  "aliases": ["rb"],
+  "line_comments": ["#"],
+  "block_comments": [["=begin", "=end"]],
+  "case_sensitive": true,
+  "string_quotes": ["\"", "'"],
+  "numeric_calls": true,
+  "keywords": {
+    "0.3": ["self", "end"],
+    "0.5": ["require", "require_relative", "include", "extend", "module", "attr_accessor", "attr_reader", "attr_writer", "private", "public", "protected", "do", "then"],
+    "1.0": ["def", "begin"],
+    "1.5": ["return", "yield", "raise", "rescue", "ensure", "break", "next", "retry", "puts", "print"],
+    "2.0": ["class", "in", "nil", "true", "false", "super", "lambda", "proc"],
+    "2.5": ["if", "elsif", "else", "unless", "case", "when", "while", "until", "for", "and", "or"],
+    "3.0": ["not"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "===", "=~", "!~", "<=>", "+", "-", "*", "/", "%", "**", "+=", "-=", "*=", "/=", "%=", "&&", "||", "!", "&", "|", "^", "<<", ">>", "..", "...", "||=", "&&=", "?"]
+}

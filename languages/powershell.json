@@ -1,0 +1,20 @@
+{
+  "name": "powershell",
+  "extensions": [".ps1", ".psm1", ".psd1"],
+  "interpreters": ["pwsh", "powershell"],
+  "aliases": ["ps1", "pwsh", "ps"],
+  "line_comments": ["#"],
+  "block_comments": [["<#", "#>"]],
+  "case_sensitive": false,
+  "string_quotes": ["\"", "'"],
+  "keywords": {
+    "0.5": ["param", "using", "import-module"],
+    "1.0": ["function", "filter"],
+    "1.5": ["return", "throw", "try", "catch", "finally", "break", "continue", "write-host", "write-output"],
+    "2.0": ["in", "true", "false", "null"],
+    "2.5": ["if", "elseif", "else", "foreach", "for", "while", "do", "switch", "until", "and", "or"],
+    "3.0": ["not"],
+    "3.5": ["eq", "ne", "lt", "le", "gt", "ge", "like", "match", "contains"]
+  },
+  "operators": ["|", ">", ">>", "+", "-", "*", "/", "%", "+=", "-=", "*=", "/=", "&&", "||", "!"]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "lua",
+  "extensions": [".lua"],
+  "interpreters": ["lua", "luajit"],
+  "aliases": [],
+  "line_comments": ["--"],
+  "block_comments": [["--[[", "]]"]],
+  "case_sensitive": true,
+  "string_quotes": ["\"", "'"],
+  "numeric_calls": true,
+  "keywords": {
+    "0.3": ["end"],
+    "0.5": ["require", "local", "then", "do"],
+    "1.0": ["function"],
+    "1.5": ["return", "break", "goto"],
+    "2.0": ["nil", "true", "false", "in"],
+    "2.5": ["if", "elseif", "else", "for", "while", "repeat", "until", "and", "or"],
+    "3.0": ["not"]
+  },
+  "operators": ["==", "~=", "<", "<=", ">", ">=", "+", "-", "*", "/", "//", "%", "^", "..", "#"]
+}

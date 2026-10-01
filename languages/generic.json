@@ -1,0 +1,20 @@
+{
+  "_doc": "Language profile schema. 'extends': name of another profile to inherit keywords, operators and comment syntax from (extensions/filenames/interpreters/aliases are never inherited). 'keywords': {weight: [words]}, higher weight = kept longer. Scale: 0.3-0.5 pure syntax glue (import, package, self), 0.8-1.0 declarations (def, function), 1.5 control-flow exits (return, try), 2.0 literals/builtins/type words (null, class, len), 2.5 branching and boolean connectives (if, else, and), 3.0 negation. Unlisted identifiers score 3.0 (+1.0 if they contain an underscore), numbers 4.5, operators 3.5, other punctuation 0.4. Keyword lookup strips leading/trailing punctuation from a token first ('$this' -> 'this', '#include' -> 'include'). 'operators': tokens made only of punctuation that carry meaning. 'line_comments': prefixes starting a comment that runs to end of line. 'block_comments': [open, close] pairs. 'case_sensitive': false lowercases keyword lookups (SQL, PHP, PowerShell). 'string_quotes': single-character string delimiters; words inside a string literal are scored as data (never as keywords) and kept longer than identifiers; omit it to disable string handling (python does, to keep its benchmarked behaviour). 'numeric_calls': true (use the built-in list: floor, ceil, round, trunc, abs, min, max, sqrt, pow, mod), a list of function names, or omit/false to disable; tokens that call one of them (Math.floor(, .ceil(, round() are kept ahead of ordinary identifiers (python omits it, for the same reason). 'extensions', 'filenames', 'interpreters' (shebang) and 'aliases' drive language detection. Used as the fallback when the language cannot be detected.",
+  "name": "generic",
+  "extensions": [],
+  "line_comments": ["#", "//"],
+  "block_comments": [["/*", "*/"], ["\"\"\"", "\"\"\""], ["'''", "'''"]],
+  "case_sensitive": true,
+  "numeric_calls": true,
+  "keywords": {
+    "0.3": ["self", "this"],
+    "0.5": ["import", "from", "package", "use", "using", "include", "require", "namespace", "pass", "public", "private", "protected", "static", "final", "const", "export", "module"],
+    "0.8": ["as"],
+    "1.0": ["def", "fn", "func", "function", "fun", "with", "let", "var", "val", "new"],
+    "1.5": ["return", "yield", "try", "catch", "except", "finally", "throw", "throws", "break", "continue", "print", "println", "printf", "echo", "await", "async"],
+    "2.0": ["class", "struct", "interface", "enum", "in", "is", "None", "True", "False", "null", "nil", "true", "false", "undefined", "super", "lambda", "raise", "range", "len", "sum", "size", "length", "typeof", "instanceof"],
+    "2.5": ["if", "elif", "else", "for", "foreach", "while", "do", "switch", "case", "default", "match", "and", "or", "unless", "until"],
+    "3.0": ["not"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "===", "!==", "+", "-", "*", "/", "%", "**", "+=", "-=", "*=", "/=", "%=", "&&", "||", "!", "&", "|", "^", "~", "<<", ">>", "=>", "->", "??", "?.", "++", "--", ":=", "<-", "?"]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "python",
+  "extensions": [".py", ".pyi", ".pyw"],
+  "interpreters": ["python", "python3", "pypy"],
+  "aliases": ["py"],
+  "line_comments": ["#"],
+  "block_comments": [["\"\"\"", "\"\"\""], ["'''", "'''"]],
+  "case_sensitive": true,
+  "keywords": {
+    "0.3": ["self"],
+    "0.5": ["import", "from", "pass"],
+    "0.8": ["as"],
+    "1.0": ["def", "with"],
+    "1.5": ["return", "try", "except", "print", "yield"],
+    "2.0": ["class", "in", "None", "True", "False", "super", "lambda", "raise", "is", "range", "len", "sum"],
+    "2.5": ["if", "elif", "else", "for", "while", "and", "or"],
+    "3.0": ["not"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "+", "-", "*", "/", "//", "%", "**", "+=", "-=", "*=", "/=", "//=", "%="]
+}

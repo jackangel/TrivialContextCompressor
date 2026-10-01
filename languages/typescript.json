@@ -1,0 +1,12 @@
+{
+  "name": "typescript",
+  "extends": "javascript",
+  "extensions": [".ts", ".tsx", ".mts", ".cts"],
+  "interpreters": ["ts-node", "tsx", "deno"],
+  "aliases": ["ts"],
+  "keywords": {
+    "0.5": ["readonly", "public", "private", "protected", "namespace", "declare"],
+    "1.0": ["abstract", "type"],
+    "2.0": ["interface", "enum", "implements", "keyof", "never", "unknown"]
+  }
+}

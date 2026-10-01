@@ -1,0 +1,18 @@
+{
+  "name": "c",
+  "extensions": [".c", ".h"],
+  "aliases": [],
+  "line_comments": ["//"],
+  "block_comments": [["/*", "*/"]],
+  "case_sensitive": true,
+  "string_quotes": ["\""],
+  "numeric_calls": true,
+  "keywords": {
+    "0.5": ["include", "define", "static", "extern", "const", "volatile", "inline", "typedef", "endif"],
+    "1.0": ["void", "ifdef", "ifndef", "undef", "pragma"],
+    "1.5": ["return", "break", "continue", "goto"],
+    "2.0": ["struct", "union", "enum", "sizeof", "NULL", "unsigned", "true", "false"],
+    "2.5": ["if", "else", "elif", "for", "while", "do", "switch", "case", "default"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "+", "-", "*", "/", "%", "+=", "-=", "*=", "/=", "%=", "&&", "||", "!", "&", "|", "^", "~", "<<", ">>", "<<=", ">>=", "&=", "|=", "^=", "->", "?", "++", "--"]
+}

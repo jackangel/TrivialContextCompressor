@@ -1,0 +1,19 @@
+{
+  "name": "java",
+  "extensions": [".java"],
+  "aliases": [],
+  "line_comments": ["//"],
+  "block_comments": [["/*", "*/"]],
+  "case_sensitive": true,
+  "string_quotes": ["\""],
+  "numeric_calls": true,
+  "keywords": {
+    "0.3": ["this"],
+    "0.5": ["import", "package", "public", "private", "protected", "static", "final", "abstract", "synchronized", "throws"],
+    "1.0": ["void", "new"],
+    "1.5": ["return", "try", "catch", "finally", "throw", "break", "continue"],
+    "2.0": ["class", "interface", "enum", "extends", "implements", "instanceof", "null", "true", "false", "super"],
+    "2.5": ["if", "else", "for", "while", "do", "switch", "case", "default"]
+  },
+  "operators": ["<", "<=", ">", ">=", "==", "!=", "+", "-", "*", "/", "%", "+=", "-=", "*=", "/=", "%=", "&&", "||", "!", "?", "++", "--", "&", "|", "^", "~", "<<", ">>", ">>>", "->", "::"]
+}
